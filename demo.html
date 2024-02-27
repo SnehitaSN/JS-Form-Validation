@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="formcontainer">
+
+        <h1>Sign Up Here!</h1>
+        <form id="myform">
+            <label>Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter Fullname......" 
+            required  minlength="3" maxlength="20" id="fullname"><br>
+
+            <label >Phone Number</label>
+            <input type="text" name="phoneno" placeholder="Enter Phonenumber" 
+            required  pattern="[789][0-9]{9}" id="phonenumber"><br>
+
+            <label >Email Id</label>
+            <input type="email"name="email" placeholder="Enter Email Address" required><br>
+
+            <label for="">Website URL</label>
+            <input type="url" name="url" placeholder="Enter Website URL"><br>
+
+            <label for="">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" 
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Please Enter 1 Uppercase Character,1 Lowercase Charcter and 1 Digit" 
+            id="mypassword"><br>
+
+            <label for="">Confirm Password</label>
+            <input type="password" name="Confirm password" placeholder="Enter Confirm Password"
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Please Enter 1 Uppercase Character,1 Lowercase Charcter and 1 Digit" 
+            id="confirmpassword"><br>
+
+
+           <input type="submit" value="REGISTER" id="register"><br>
+           <div class="hesitate" id="hesitate">
+            Don't Hesitate !
+           </div>
+
+
+             <!-- ASSIGNMENT -->
+             <input class="click" type="text" value="cannot click" disabled style="background-color: rgb(240, 117, 117);"/>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
